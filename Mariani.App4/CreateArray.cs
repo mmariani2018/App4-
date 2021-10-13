@@ -21,23 +21,22 @@ namespace Mariani.App4
         {
             return new int[50];
         }
-        private void populateTheArray(int[] primitiveArray, int tempNumber)
+        private void populateTheArray(int[] primitiveArray)
         {
-            
+            //generate a number
+            //if generated nuber is in array generate new number
+            //add number to array
                 for (int n = 0; n < primitiveArray.Length; n++)
                 {
-                //create each element
-                generateRamdomNumber();
-                //add each element to the array
-                primitiveArray[n] = tempNumber;
+                primitiveArray[n] = generateRamdomNumber(); 
                 }
         }
-        private void generateRamdomNumber()
+        private int generateRamdomNumber()
         {
             int tempNumber;
             Random random = new Random();
 
-            tempNumber = random.Next(51);
+            return tempNumber = random.Next(51);
         }
     }
 }
