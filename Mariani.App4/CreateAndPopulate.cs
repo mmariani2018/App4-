@@ -7,30 +7,27 @@ namespace Mariani.App4
     class CreateAndPopulate
     {
         Primitives temp = new Primitives();
-
         public CreateAndPopulate()
         {
-            populateNode(temp);
+            generateNode(temp);
         }
-        private void populateNode(Primitives temp)
+        private void generateNode(Primitives temp)
         {
-            Random random = new Random();
             int tempNumber;
+            Random random = new Random();
             bool flag = false;
-
 
             do
             {
                 tempNumber = random.Next(51);
-                flag = temp.setRandomNumbes(tempNumber);
-
+                temp.setRandomNumbes(tempNumber);
             } while (!flag);
-           
 
         }
-        public Primitives getPrimitives()
+        public Primitives getGeneratedNumber()
         {
-            return temp;
+            return  temp;
         }
+        
     }
 }

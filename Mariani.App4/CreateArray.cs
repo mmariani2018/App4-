@@ -8,32 +8,36 @@ namespace Mariani.App4
     {
         public CreateArray()
         {
-            Primitives[] primitiveArray = createTheArray();
+            int[] primitiveArray = createTheArray();
             populateTheArray(primitiveArray);
             showTheArrray(primitiveArray);
 
         }
-        private void showTheArrray(Primitives[] primitiveArray)
+        private void showTheArrray(int[] primitiveArray)
         {
             ViewArray view = new ViewArray(primitiveArray);
         }
-        private Primitives[] createTheArray()
+        private int[] createTheArray()
         {
-            return new Primitives[50];
+            return new int[50];
         }
-        private void populateTheArray(Primitives[] primitiveArray)
+        private void populateTheArray(int[] primitiveArray)
         {
             Primitives temp;
+            
 
-            for (int n = 0; n < primitiveArray.Length; n++)
-            {
+                for (int n = 0; n < primitiveArray.Length; n++)
+                {
                 //create each element
                 CreateAndPopulate cpn = new CreateAndPopulate();
-                temp = cpn.getPrimitives();
-
+                temp = cpn.getGeneratedNumber();
                 //add each element to the array
                 primitiveArray[n] = temp;
-            }
+                
+
+                }
+            
+            
         }
     }
 }
