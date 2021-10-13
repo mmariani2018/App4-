@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mariani.App4", "Mariani.App4\Mariani.App4.csproj", "{2AD8E2C6-2447-4BA9-AF20-076D8C46FE7D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2AD8E2C6-2447-4BA9-AF20-076D8C46FE7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AD8E2C6-2447-4BA9-AF20-076D8C46FE7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AD8E2C6-2447-4BA9-AF20-076D8C46FE7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AD8E2C6-2447-4BA9-AF20-076D8C46FE7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {57723835-354C-4A9A-AF24-203245330249}
+	EndGlobalSection
+EndGlobal
