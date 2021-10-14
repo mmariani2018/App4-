@@ -16,8 +16,10 @@ namespace Mariani.App4
             if (n > -1)
             {
                 randomNumbers = n;
+                return true;
             }
-            return true;
+            return false;
+            
         }
 
         public int getNumbers()

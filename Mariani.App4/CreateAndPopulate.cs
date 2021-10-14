@@ -21,7 +21,7 @@ namespace Mariani.App4
             do
             {
                 tempNumber = random.Next(51);
-                temp.setRandomNumbes(tempNumber);
+                flag = temp.setRandomNumbes(tempNumber);
             } while (!flag);
 
         }

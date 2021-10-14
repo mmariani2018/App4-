@@ -11,17 +11,14 @@ namespace Mariani.App4
             showArray(primitiveArray);
         }
 
-        private void showArray(primitives[] primitiveArray)
+        private void showArray(Primitives[] primitiveArray)
         {
-            InputOutput io = new InputOutput();
-            String outputString = "";
-
-            for (int n = 0; n < primitiveArray.Length; n++)
+            string outputString = "";
+            for(int n = 0; n < primitiveArray.Length; n++)
             {
-                outputString += primitiveArray[n] + "\n";
+                //outputString += primitiveArray[n].getNumbers;
             }
-
-            io.showMessage("\nthe elements in this array are:\n" + outputString);
+            Console.WriteLine(outputString);
         }
 
     }

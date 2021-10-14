@@ -8,15 +8,16 @@ namespace Mariani.App4
     {
         public InputOutput() { }
 
-        public void showMessage(String message)
+        public void showMessage(string message)
         {
             Console.WriteLine(message);
         }
 
-        public String getSomething(String message)
+        public string getSomething(string message)
         {
             Console.Write(message + "  ");
             return Console.ReadLine();
+           
         }
     }
 }

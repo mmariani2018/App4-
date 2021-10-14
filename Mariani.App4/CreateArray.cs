@@ -6,15 +6,16 @@ namespace Mariani.App4
 {
     class CreateArray
     {
+        
         public CreateArray()
         {
 
             Primitives[] primitiveArray = createTheArray();
             populateTheArray(primitiveArray);
-            showTheArrray(primitiveArray);
+            showTheArray(primitiveArray);
 
         }
-        private void showTheArrray(Primitives[] primitiveArray)
+        private void showTheArray(Primitives[] primitiveArray)
         {
             ViewArray view = new ViewArray(primitiveArray);
         }
@@ -35,15 +36,7 @@ namespace Mariani.App4
                 //add each element to the array
                 primitiveArray[n] = temp;
             }
-
-
         }
-        private int generateRamdomNumber()
-        {
-            int tempNumber;
-            Random random = new Random();
-
-            return tempNumber = random.Next(51);
-        }
+       
     }
 }
