@@ -7,6 +7,7 @@ namespace Mariani.App4
     class CreateAndPopulate
     {
         Primitives temp = new Primitives();
+
         public CreateAndPopulate()
         {
             generateNode(temp);

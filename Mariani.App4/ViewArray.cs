@@ -6,12 +6,12 @@ namespace Mariani.App4
 {
     class ViewArray
     {
-        public ViewArray(int[] primitiveArray)
+        public ViewArray(Primitives[] primitiveArray)
         {
             showArray(primitiveArray);
         }
 
-        private void showArray(int[] primitiveArray)
+        private void showArray(primitives[] primitiveArray)
         {
             InputOutput io = new InputOutput();
             String outputString = "";

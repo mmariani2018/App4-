@@ -8,28 +8,35 @@ namespace Mariani.App4
     {
         public CreateArray()
         {
-            int[] primitiveArray = createTheArray();
+
+            Primitives[] primitiveArray = createTheArray();
             populateTheArray(primitiveArray);
             showTheArrray(primitiveArray);
 
         }
-        private void showTheArrray(int[] primitiveArray)
+        private void showTheArrray(Primitives[] primitiveArray)
         {
             ViewArray view = new ViewArray(primitiveArray);
         }
-        private int[] createTheArray()
+        private Primitives[] createTheArray()
         {
-            return new int[50];
+            return new Primitives[50];
         }
-        private void populateTheArray(int[] primitiveArray)
+        private void populateTheArray(Primitives[] primitiveArray)
         {
-            //generate a number
-            //if generated nuber is in array generate new number
-            //add number to array
-                for (int n = 0; n < primitiveArray.Length; n++)
-                {
-                primitiveArray[n] = generateRamdomNumber(); 
-                }
+            Primitives temp;
+
+            for (int n = 0; n < primitiveArray.Length; n++)
+            {
+                //create each element
+                CreateAndPopulate cpn = new CreateAndPopulate();
+                temp = cpn.getGeneratedNumber();
+
+                //add each element to the array
+                primitiveArray[n] = temp;
+            }
+
+
         }
         private int generateRamdomNumber()
         {
