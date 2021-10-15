@@ -28,24 +28,30 @@ namespace Mariani.App4
         }
         public void compareNumberToElements(int tempNumber, int[] numbers)
         {
+            //populate first element in array with tempNumber
+            //generate new number
+            //compare tempNumber to see if it is in array already
+            //populate array if number is new
             for (int i = 0; i < numbers.Length; i++)
             {
-                numbers[i] = tempNumber;
-
-                //compare tempNumber to see if it is in array already
+                numbers[0] = tempNumber;
+                generateNumber();
                 if (numbers.Contains(tempNumber))
                 {
                     generateNumber();
+                    numbers[i] = tempNumber;
                 }
                 else
                 {
-                    for (int n = 0; n < numbers.Length; n++)
-                    {
-                        numbers[n] = tempNumber;
-                    }
+                    numbers[i] = tempNumber;
                 }
+
             }
-            //populate array if number is new
+            
+
+
+ 
+            
         }
         public void showArray(int [] numbers)
         {
