@@ -10,8 +10,13 @@ namespace Mariani.App4
         public ArrayOfPrimitives()
         {
             int[] numbers = CreateTheArray();
-            int tempNumber = generateNumber(); 
-            compareNumberToElements(tempNumber, numbers);
+            for(int n = 0; n < numbers.Length; n++)
+               {
+                int tempNumber = generateNumber();
+                compareNumberToElements(tempNumber, numbers);
+            }
+            
+            
             showArray(numbers);
             
         }
@@ -28,30 +33,23 @@ namespace Mariani.App4
         }
         public void compareNumberToElements(int tempNumber, int[] numbers)
         {
+            
             //populate first element in array with tempNumber
             //generate new number
             //compare tempNumber to see if it is in array already
             //populate array if number is new
-            for (int i = 0; i < numbers.Length; i++)
-            {
-                numbers[0] = tempNumber;
-                generateNumber();
                 if (numbers.Contains(tempNumber))
                 {
-                    generateNumber();
-                    numbers[i] = tempNumber;
+                    tempNumber = generateNumber();
+              
                 }
                 else
                 {
-                    numbers[i] = tempNumber;
+                // get current index and set the current index 
+                //add tempnumber to array
+               
                 }
-
-            }
-            
-
-
- 
-            
+           
         }
         public void showArray(int [] numbers)
         {
@@ -62,10 +60,5 @@ namespace Mariani.App4
                 Console.WriteLine(number);
             }
         }
-
-
-
-
-
     }
 }
