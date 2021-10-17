@@ -6,7 +6,7 @@ namespace Mariani.App4
     {
         static void Main(string[] args)
         {
-            new ArrayOfPrimitives();
+            new CreateArray();
         }
     }
 }

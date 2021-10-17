@@ -16,7 +16,10 @@ namespace Mariani.App4
             string outputString = "";
             for(int n = 0; n < primitiveArray.Length; n++)
             {
-                //outputString += primitiveArray[n].getNumbers;
+                //primitiveArray[n].ToString();
+                outputString += primitiveArray[n].getNumbers() + "\n";
+
+                //Console.WriteLine(primitiveArray[n].getNumbers();
             }
             Console.WriteLine(outputString);
         }
