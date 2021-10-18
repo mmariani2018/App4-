@@ -16,13 +16,15 @@ namespace Mariani.App4
         {
             int tempNumber;
             Random random = new Random();
-            bool flag = false;
+            bool flag = Primitives.Equals();
 
             do
             {
                 tempNumber = random.Next(51);
-                flag = temp.setRandomNumbes(tempNumber);
+                 temp.setRandomNumbes(tempNumber);
             } while (!flag);
+
+            if()
 
         }
         public Primitives getGeneratedNumber()
