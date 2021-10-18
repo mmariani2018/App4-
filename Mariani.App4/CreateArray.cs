@@ -14,7 +14,7 @@ namespace Mariani.App4
             populateTheArray(primitiveArray);
             showTheArray(primitiveArray);
 
-        }
+        } 
         private void showTheArray(Primitives[] primitiveArray)
         {
             ViewArray view = new ViewArray(primitiveArray);

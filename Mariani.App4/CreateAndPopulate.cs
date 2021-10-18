@@ -16,7 +16,7 @@ namespace Mariani.App4
         {
             int tempNumber;
             Random random = new Random();
-            bool flag = Primitives.Equals();
+            bool flag = false;
 
             do
             {
@@ -24,7 +24,7 @@ namespace Mariani.App4
                  temp.setRandomNumbes(tempNumber);
             } while (!flag);
 
-            if()
+            
 
         }
         public Primitives getGeneratedNumber()
